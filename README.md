@@ -1,30 +1,30 @@
-#Mongoose schemes connector
+# Mongoose schemes connector
 
-##Install
+## Install
 
     npm install mongoose-scheme-connector
 
-##Usage example
+## Usage example
 
-###In your server init script
+### In your server init script
 ```javascript
 const dbConnect = require('./lib/db');
 dbConnect().then((models) => {
   server.decorate('request', 'db', models);
 });
 
-###./lib/db sample structure
+### ./lib/db sample structure
 ./lib/db/index.js
 ./lib/db/schemas/user.js
 
-####./lib/db/index.js contents:
+#### ./lib/db/index.js contents:
 ```javascript
 module.exports = require('mongoose-scheme-connector')(
   'dbName',
   __dirname
 );
 
-####./lib/db/schemas/user.js contents:
+#### ./lib/db/schemas/user.js contents:
 ```javascript
 module.exports = require('mongoose').Schema({
   registerDate: {
@@ -35,6 +35,3 @@ module.exports = require('mongoose').Schema({
     type: String
   }
 });
-
-
-
