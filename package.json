@@ -1,6 +1,6 @@
 {
   "name": "mongoose-scheme-connector",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mongoose schemes connector",
   "main": "index.js",
   "scripts": {
