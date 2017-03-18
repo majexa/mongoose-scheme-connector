@@ -1,4 +1,4 @@
-# Mongoose schemes connector
+# Mongoose schemes connector for Hapi
 
 ## Install
 
@@ -8,6 +8,7 @@
 
 ### In your server init script
 ```javascript
+const server = new Hapi.Server();
 const dbConnect = require('./lib/db');
 dbConnect().then((models) => {
   server.decorate('request', 'db', models);
