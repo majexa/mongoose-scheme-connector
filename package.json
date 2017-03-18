@@ -1,0 +1,11 @@
+{
+  "name": "mongoose-scheme-connector",
+  "version": "1.0.0",
+  "description": "Mongoose schemes connector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Yartsev",
+  "license": "ISC"
+}
